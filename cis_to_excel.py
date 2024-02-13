@@ -191,7 +191,9 @@ with open("cis_text.txt", 'r', encoding='utf-8') as filer:
 					cis_ration = cis_ration.replace(' \n\n','XMXM').replace('\n','').replace('XMXM','\n\n').rstrip()
 					cis_impact = cis_impact.replace(' \n\n','XMXM').replace('\n','').replace('XMXM','\n\n').rstrip()
 					cis_audit = cis_audit.replace(' \n\n','XMXM').replace('\n','').replace('XMXM','\n\n').rstrip()
-					#cis_remed = cis_remed.replace('\n\n','').replace('\n','').rstrip()
+                    #feel free to uncomment the below to play with the remediations formatting. This is really wonky and just leaving line breaks in seems the most readable
+					#cis_remed = cis_remed.replace('\n\n','').replace(' \n','').rstrip()
+					#cis_remed = cis_remed.replace(' \n','').rstrip()
                     # use this one instead to preserve all paragraph spacing - I found this less useful in the Remediation section
                     # cis_remed = cis_remed.replace(' \n\n','XMXM').replace('\n','').replace('XMXM','\n\n').rstrip()
 					cis_defval = cis_defval.replace(' \n\n','XMXM').replace('\n','').replace('XMXM','\n\n').rstrip()
